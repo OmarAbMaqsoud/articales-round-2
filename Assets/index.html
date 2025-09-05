@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>omar-articale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">omar - space </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Article -omar</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+    <div class="row align-items-center mb-4">
+        <div class="col-md-8">
+        <h2 class="mb-0">a5r Articles</h2>
+        <p class="text-muted mb-0">about task in crud</p>
+        </div>
+        <div class="col-md-4 text-end">
+        <button class="btn btn-primary" id="newArticleBtn" data-bs-toggle="modal" data-bs-target="#articleModal">
+            <i class="fa fa-plus me-1"></i> adafet article
+        </button>
+        </div>
+    </div>
+
+    <div id="articles" class="row g-4"></div>
+    </div>
+
+    <div class="modal fade" id="articleModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">3ml Article gded</h5>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form id="articleForm" onsubmit="return false;">
+            <input type="hidden" id="articleId">
+            <div class="mb-3">
+                <label class="form-label">3noan</label>
+                <input id="title" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">moualf</label>
+                <input id="author" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">m7toa</label>
+                <textarea id="content" class="form-control" rows="10" required></textarea>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">elghaa</button>
+        <button class="btn btn-success" id="saveArticle">Save</button>
+    </div>
+        </div>
+    </div>
+    </div>
+
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

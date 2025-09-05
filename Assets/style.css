@@ -1,0 +1,39 @@
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+}
+
+.card.article {
+    border-radius: 12px;
+}
+
+.article-card {
+    border: none;
+    border-radius: 12px;
+    transition: transform .25s ease, box-shadow .25s ease;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+}
+.article-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+}
+
+.article-content {
+    max-height: 120px;
+    overflow: hidden;
+    position: relative;
+}
+.article-content:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(transparent, #f8f9fa);
+}
+
+@media (max-width: 575px) {
+    .article-content { max-height: 140px; }
+}
